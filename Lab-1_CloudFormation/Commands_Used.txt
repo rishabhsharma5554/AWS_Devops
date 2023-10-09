@@ -1,0 +1,23 @@
+Command - 1 : Used to launch the stack creation process using inline parameters to match
+the template definition.
+
+aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
+
+Command - 2 : Used to query the status of the stack creation process by running the describe-stack command in the CLI and viewing the process
+in the console.
+aws cloudformation describe-stacks --stack-name Lab1
+
+Command - 3 : To query the status of the stack creation process, from the terminal.
+aws cloudformation describe-stacks --stack-name Lab1 --query "Stacks[0].StackStatus"
+
+Command - 4 : To query changed resources 
+aws cloudformation describe-stack-resource-drifts --stack-name Lab1 --stack-resource-drift-status-filters MODIFIED DELETED
+
+Command - 5 : Used to launch the stack change set process:
+aws cloudformation create-change-set --stack-name Lab1 --change-set-name Lab1ChangeSet --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1-CS.yaml
+
+Command - 6 : Used to delete complete Stack
+aws cloudformation delete-stack --stack-name Lab1
+
+Command - 7 : Used to delete your change set.
+aws cloudformation delete-change-set --change-set-name Lab1ChangeSet --stack-name Lab1
