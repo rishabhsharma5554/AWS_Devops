@@ -1,0 +1,315 @@
+git version 2.40.1
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment $ git --version
+
+git version 2.40.1
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment $ aws --version
+aws-cli/2.13.20 Python/3.11.5 Linux/4.14.326-245.539.amzn2.x86_64 exe/x86_64.amzn.2 prompt/off
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment $ pwd
+/home/ec2-user/environmentAWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment $ cd templates/
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
+An error occurred (ValidationError) when calling the CreateStack operation: Invalid template parameter property 'AlowedValues'
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
+An error occurred (ValidationError) when calling the CreateStack operation: Template format error: [/Resources/Route] resource definition is malformed
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation create-stack --stack-name Lab1 --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --template-body file://lab1.yaml
+{
+    "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580"
+}
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation describe-stacks --stack-name Lab1
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+                },
+                {
+                    "ParameterKey": "LatestAmiId",
+                    "ParameterValue": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2",
+                    "ResolvedValue": "ami-0db2efede9f8bb581"
+                }
+            ],
+            "CreationTime": "2023-10-09T08:48:55.577000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_IN_PROGRESS",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "StackName": "Lab1",
+            "Description": "AWS CloudFormation Simple Infrastructure Template VPC_Single_Instance_In_Subnet: This template will show how to
+ create a VPC and add an EC2 instance with an Elastic IP address and a security group.",
+            "Parameters": [
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.micro"
+                },
+                {
+                    "ParameterKey": "VPCCIDR",
+                    "ParameterValue": "10.199.0.0/16"
+                },
+                {
+                    "ParameterKey": "PUBSUBNET1",
+                    "ParameterValue": "10.199.10.0/24"
+                },
+                {
+                    "ParameterKey": "LatestAmiId",
+                    "ParameterValue": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2",
+                    "ResolvedValue": "ami-0db2efede9f8bb581"
+                }
+            ],
+            "CreationTime": "2023-10-09T08:48:55.577000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_IN_PROGRESS",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation describe-stacks --stack-name Lab1 --query "Stacks[0].StackStatus"
+"CREATE_COMPLETE"
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation describe-stack-resource-drifts --stack-name Lab1 --stack-resource-drift-status-filters MODIFIED DELETED
+-filters MODIFIED DELETED
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",
+            "ResourceType": "AWS::EC2::SecurityGroup",            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+:...skipping...
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation describe-stacks --stack-name Lab1 --query "Stacks[0].StackStatus"
+"CREATE_COMPLETE"
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ aws cloudformation describe-stack-resource-drifts --stack-name Lab1 --stack-resource-drift-status-filters MODIFIED DELETED
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",            "ResourceType": "AWS::EC2::SecurityGroup",
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+:...skipping...
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\:...skipping...
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\:...skipping...
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",            "ResourceType": "AWS::EC2::SecurityGroup",
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80},{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "PropertyDifferences": [
+                {
+                    "PropertyPath": "/SecurityGroupIngress/1",
+                    "ExpectedValue": "null",
+                    "ActualValue": "{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}",
+                    "DifferenceType": "ADD"
+                }
+            ],
+            "StackResourceDriftStatus": "MODIFIED",
+            "Timestamp": "2023-10-09T09:12:54.136000+00:00"
+        }
+    ]
+}
+:...skipping...
+:...skipping...
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",
+            "ResourceType": "AWS::EC2::SecurityGroup",            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80},{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "PropertyDifferences": [
+                {
+                    "PropertyPath": "/SecurityGroupIngress/1",
+                    "ExpectedValue": "null",
+                    "ActualValue": "{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}",
+                    "DifferenceType": "ADD"
+                }
+            ],
+            "StackResourceDriftStatus": "MODIFIED",
+            "Timestamp": "2023-10-09T09:12:54.136000+00:00"
+        }
+    ]
+}
+~
+~
+~
+~
+(END)...skipping...
+{
+    "StackResourceDrifts": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580",
+            "LogicalResourceId": "InstanceSecurityGroup",
+            "PhysicalResourceId": "sg-0bc7226d69207db59",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "ExpectedProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "ActualProperties": "{\"GroupDescription\":\"Enable HTTP via port 80\",\"SecurityGroupIngress\":[{\"CidrIp\":\"1.1.1.1/32\",\"FromPort\":80,\"IpProtocol\":\"tcp\",\"ToPort\":80},{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}],\"VpcId\":\"vpc-0ad88bc88de3d0b60\"}",
+            "PropertyDifferences": [
+                {
+                    "PropertyPath": "/SecurityGroupIngress/1",
+                    "ExpectedValue": "null",
+                    "ActualValue": "{\"CidrIp\":\"49.43.43.223/32\",\"IpProtocol\":-1}",
+                    "DifferenceType": "ADD"
+                }
+            ],
+            "StackResourceDriftStatus": "MODIFIED",
+            "Timestamp": "2023-10-09T09:12:54.136000+00:00"
+        }
+    ]
+}
+~
+~
+~
+~
+~
+ ^X
+^C
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ 
+Error parsing parameter '--template-body': Unable to load paramfile file://lab1-CS.yaml: [Errno 2] No such file or directory: 'lab1-CS.yaml'
+{WSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ 
+    "Id": "arn:aws:cloudformation:eu-west-2:835650473189:changeSet/Lab1ChangeSet/90f48e88-e636-485e-b3d1-81d210620ca8",
+    "StackId": "arn:aws:cloudformation:eu-west-2:835650473189:stack/Lab1/1e4c7bc0-6680-11ee-a7ad-0a71e220e580"
+}
+
+
+AWSLabsUser-8MKQZZE18jE9XetLiktRVn:~/environment/templates (main) $ 

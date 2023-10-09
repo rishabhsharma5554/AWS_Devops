@@ -222,7 +222,7 @@ Resources:
           FromPort: '80'
           ToPort: '80'
   # TASK 5.1 - BEGIN: Change IP Range to 0.0.0.0/0
-          CidrIp: 1.1.1.1/32
+          CidrIp: 0.0.0.0/0
   # TASK 5.1 - END
   WebServerInstance:
     Type: 'AWS::EC2::Instance'
